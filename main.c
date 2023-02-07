@@ -74,9 +74,13 @@ int main(void)
         send_trig();
         a.whole = pulse / 58;
         get_fraction(pulse % 58, &a);
-        snprintf(send_str, MAX_LEN_LCD_STR+1, "len = %d.%d CM  ", a.whole, a.frac);
-
+        snprintf(send_str, MAX_LEN_LCD_STR+1, "LEN=%d.%d CM    ", a.whole, a.frac);
         LCD_send_data(send_str);
+
+        LCD_send_command(0xc0); // set position on 2nd row
+        snprintf(send_str, MAX_LEN_LCD_STR+1, "FULL=%d.%d CM   ", a.whole+7, a.frac);
+        LCD_send_data(send_str);
+        
         LCD_send_command(0x02); // return cursor to home
     }
 
