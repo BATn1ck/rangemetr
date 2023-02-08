@@ -21,7 +21,7 @@
 ![schema](https://github.com/BATn1ck/rangemetr/blob/main/schema.png)
 <br>
 
-Для загрузки прошивки в микроконтроллер использовался программатор USBASP:
+Для загрузки прошивки в микроконтроллер используется программатор USBASP:
 ![USBASP](https://user-images.githubusercontent.com/33072543/217591057-c9e2ccea-89c8-4260-bec4-d8a78cfc5dae.jpg)
 <br>
 
