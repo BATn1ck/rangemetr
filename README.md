@@ -17,5 +17,25 @@
 ![range](https://user-images.githubusercontent.com/33072543/217589565-ad0daecc-04d5-411f-9a11-92793e9b06bb.jpg)
 <br>
 
-Схема дальномера:
+<b>Схема дальномера:</b>
 ![schema](https://github.com/BATn1ck/rangemetr/blob/main/schema.png)
+<br>
+
+Для загрузки прошивки в микроконтроллер использовался программатор USBASP:
+![USBASP](https://user-images.githubusercontent.com/33072543/217591057-c9e2ccea-89c8-4260-bec4-d8a78cfc5dae.jpg)
+<br>
+
+Для сборки проекта используется команда: <br>
+```bash
+make compile
+```
+
+Для загрузки программы в микроконтроллер используется команда: <br>
+```bash
+make load
+```
+
+Чтобы собрать и загрузить программу сразу:
+```bash
+make build
+```
